@@ -67,7 +67,15 @@ I named activities converting to factor `activity` variable of `my_data`. I defi
 I labelled `my_data` variables according to features.txt file transforming names to make them a more readable.
 
 ### Step 5: creating a second and independent tidy data set with the average of each variable for each activity and each subject
-[Hadley Wickham paper on tidy data](http://vita.had.co.nz/papers/tidy-data.pdf)
+I finally created a second data set called `my_tidy_data.txt` (you can find it in `data` directory). According to [Hadley Wickham's paper on tidy data](http://vita.had.co.nz/papers/tidy-data.pdf) a data set is tidy when:
+
+1. each variable forms a column,
+2. each observation forms a row,
+3. each type of observational unit forms a table.
+
+
+
+
 
 
 
