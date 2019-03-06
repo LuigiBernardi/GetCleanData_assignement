@@ -1,4 +1,4 @@
-# My assignement for Getting and Cleaning Data explained
+# My assignment for Getting and Cleaning Data explained
 
 
 Disclaimer: I'm not a native English speaker and I apologize for any mistake or poor phrase.
@@ -30,7 +30,7 @@ Luigi_tidy_data <- read.table(file.path(path, "my_tidy_data.txt"), header = TRUE
 ```
 
 
-## My choices to complete the assignement
+## My choices to complete the assignment
 
 For completing the 5 steps I've often used packages in `tidyverse` library, so my data set are mainly tibbles. Details on my choices about required task can be found in `run_analysis.R` and `CodeBook.md`. 
 
@@ -67,15 +67,17 @@ I named activities converting to factor `activity` variable of `my_data`. I defi
 I labelled `my_data` variables according to features.txt file transforming names to make them a more readable.
 
 ### Step 5: creating a second and independent tidy data set with the average of each variable for each activity and each subject
-I finally created a second data set called `my_tidy_data.txt` (you can find it in `data` directory). According to [Hadley Wickham's paper on tidy data](http://vita.had.co.nz/papers/tidy-data.pdf) a data set is tidy when:
+I finally created a second data set called `my_tidy_data.txt` (you can find it in `data` directory). According to [Hadley Wickham's paper on tidy data](http://vita.had.co.nz/papers/tidy-data.pdf), a data set is tidy when:
 
 1. each variable forms a column,
 2. each observation forms a row,
 3. each type of observational unit forms a table.
 
+For the creation of required data set the first two statements are relevant. I decided to consider each mean and standard deviation computed con signals as a variable and so i didn't stack data producing a wide data set and not a long one. I just summarized all 66 measured variables computing mean for each group defined by intersection of subject and activity. 
+My tidy data set has 68 variables (for details see `CodeBook.md`):
 
+* subject with id of subjects as values,
+* activity with activity as values,
+* 66 variables extracted in step 2 with their average for each subject and each activity as values.
 
-
-
-
-
+My tidy data set has 180 observations. Each observational unit is defined by the 180 possible combinations of 30 subject and 5 activities, and contains values of 68 variables described above.
