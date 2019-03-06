@@ -1,6 +1,6 @@
 ## INTRO ----
 
-library(tidyverse) # required because i used dplyr verbs for completing the assignement
+library(tidyverse) # required because i used dplyr verbs for completing the assignment
 
 path <- "./data" # replace with your local path to unzipped "UCI HAR Dataset" directory before running or sourcing
                  # the script to replicate my analysis
