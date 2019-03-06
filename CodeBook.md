@@ -4,7 +4,7 @@ With `run_analysis.R` script I've created 2 data sets.
 
 ## my_data
 
-Is the raw dataset built according to indications provided in step 1, 2, 3 an 4
+Is the raw data set built according to indications provided in step 1, 2, 3 an 4
 
 ### Variables and values of categorical variables
 
@@ -13,8 +13,8 @@ Is the raw dataset built according to indications provided in step 1, 2, 3 an 4
 2 - activity: activity measured
 
 values:
-* 1 -walking
-* 2 -walking upstairs
+* 1 - walking
+* 2 - walking upstairs
 * 3 - walking downstairs
 * 4 - sitting
 * 5 - standing
@@ -164,8 +164,8 @@ Is the tidy data set built according to indications provided in step 5 and illus
 2 - activity: activity measured
 
 values:
-* 1 -walking
-* 2 -walking upstairs
+* 1 - walking
+* 2 - walking upstairs
 * 3 - walking downstairs
 * 4 - sitting
 * 5 - standing
