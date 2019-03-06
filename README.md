@@ -85,9 +85,9 @@ My tidy data set has 180 observations. Each observational unit is defined by the
 
 ## A brief note on units of measurement
 
-In the orginal documentation units of measurement are not specified. To indicate them in `CodeBook.md`, considering that they are signals form an accelerometer i followed this guide lines:
+In the orginal documentation units of measurement are not specified. To put them in `CodeBook.md`, considering that are signals form an accelerometer, I followed those guidelines:
 
 * raw signals are expressed in m/(s^2),
 * jerk signals are expressed in m/(s^3),
-* magnitude preserve the orginal unit of measurement,
-* all means and standard deviations computed on raw data preserve the orginal unit of masurement, and so does any average of mean and standard deviation values.
+* magnitude preserve the orginal unit of measurement of raw and jerk signals,
+* all means and standard deviations computed on raw or jerk data preserve the orginal unit of masurement, and so does any average of mean and standard deviation values.
