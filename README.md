@@ -73,11 +73,11 @@ I finally created a second data set called `my_tidy_data.txt` (you can find it i
 2. each observation forms a row,
 3. each type of observational unit forms a table.
 
-For the creation of required data set the first two statements are relevant. I decided to consider each mean and standard deviation computed con signals as a variable and so i didn't stack data producing a wide data set and not a long one. I just summarized all 66 measured variables computing mean for each group defined by intersection of subject and activity. 
+For the creation of required data set the first two statements are relevant. I decided to consider each mean and standard deviation computed on signals as a variable, and so i didn't stack data. As consequence my data set is wide rather than long. I just summarized all 66 measured variables computing mean for each group defined by intersection of subject and activity. 
 My tidy data set has 68 variables (for details see `CodeBook.md`):
 
-* subject with id of subjects as values,
-* activity with activity as values,
+* `subject` with id of subjects as values,
+* `activity` with activity as values,
 * 66 variables extracted in step 2 with their average for each subject and each activity as values.
 
-My tidy data set has 180 observations. Each observational unit is defined by the 180 possible combinations of 30 subject and 5 activities, and contains values of 68 variables described above.
+My tidy data set has 180 observations. Each observational unit is defined by the 180 possible combinations of 30 subjects and 6 activities, and contains values of the 68 variables described above.
