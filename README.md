@@ -58,7 +58,7 @@ I decided to extract mean and standard deviation computed on these signals, as s
 * fBodyGyroMag
 * fBodyGyroJerkMag
 
-These variables are identified by mean() and std() suffix. In total I extracted 66 variables. There are other variables that involve a mean computation but they are used in the angle() variables and so I didn't extract them.
+Variables I extracted are 66 identified by mean() and std() suffix in feature.txt file. There are other variables that involve a mean computation but they are used in the angle() variables and so I didn't extract them.
 
 ### Step 3: naming the activities in the data set
 I named activities converting to factor `activity` variable of `my_data`. I defined levels and labels according to activity_labels.txt file.

@@ -10,7 +10,8 @@ Is the raw dataset built according to indications provided in step 1, 2, 3 an 4
 
 1 - subject: identification number of the subject 
 
-2 - activity: activity mesured
+2 - activity: activity measured
+
 values:
 * 1 -walking
 * 2 -walking upstairs
@@ -151,3 +152,153 @@ values:
 
 68 - fBodyBodyGyroJerkMag_sd: standard deviation of fBodyBodyGyroJerkMag in m/(s^3)
 
+
+## my_tidy_data
+
+Is the tidy data set built according to indications provided in step 5 and illustrated in `README.md`
+
+### Variables and values of categorical variables
+
+1 - subject: identification number of the subject 
+
+2 - activity: activity measured
+
+values:
+* 1 -walking
+* 2 -walking upstairs
+* 3 - walking downstairs
+* 4 - sitting
+* 5 - standing
+* 6 - laying 
+
+3 - tBodyAcc_mean_X_average: average of means of tBodyAcc on X axis in m/(s^2)                         
+
+4 - tBodyAcc_mean_Y_average: average of means of tBodyAcc on Y axis in m/(s^2)                         
+
+5 - tBodyAcc_mean_Z_average: average of means of tBodyAcc on Z axis in m/(s^2)                         
+
+6 - tBodyAcc_sd_X_average: average of standard deviations of tBodyAcc on X axis in m/(s^2)             
+
+7 - tBodyAcc_sd_Y_average: average of standard deviations of tBodyAcc on Y axis in m/(s^2)             
+
+8 - tBodyAcc_sd_Z_average: average of standard deviations of tBodyAcc on Z axis in m/(s^2)             
+
+9 - tGravityAcc_mean_X_average: average of means of tGravityAcc on X axis in m/(s^2)                   
+
+10 - tGravityAcc_mean_Y_average: average of means of tGravityAcc on Y axis in m/(s^2)                  
+
+11 - tGravityAcc_mean_Z_average: average of means of tGravityAcc on Z axis in m/(s^2)                  
+
+12 - tGravityAcc_sd_X_average: average of standard deviations of tGravityAcc on X axis in m/(s^2)      
+
+13 - tGravityAcc_sd_Y_average: average of standard deviations of tGravityAcc on Y axis in m/(s^2)      
+
+14 - tGravityAcc_sd_Z_average: average of standard deviations of tGravityAcc on Z axis in m/(s^2)      
+
+15 - tBodyAccJerk_mean_X_average: average of means of tBodyAccJerk on X axis in m/(s^3)                
+
+16 - tBodyAccJerk_mean_Y_average: average of means of tBodyAccJerk on Y axis in m/(s^3)                
+
+17 - tBodyAccJerk_mean_Z_average: average of means of tBodyAccJerk on Z axis in m/(s^3)                
+
+18 - tBodyAccJerk_sd_X_average: average of standard deviations of tBodyAccJerk on X axis in m/(s^3)    
+
+19 - tBodyAccJerk_sd_Y_average: average of standard deviations of tBodyAccJerk on Y axis in m/(s^3)    
+
+20 - tBodyAccJerk_sd_Z_average: average of standard deviations of tBodyAccJerk on Z axis in m/(s^3)    
+
+21 - tBodyGyro_mean_X_average: average of means of tBodyGyro on X axis in m/(s^2)                      
+
+22 - tBodyGyro_mean_Y_average: average of means of tBodyGyro on Y axis in m/(s^2)                      
+
+23 - tBodyGyro_mean_Z_average: average of means of tBodyGyro on Z axis in m/(s^2)                      
+
+24 - tBodyGyro_sd_X_average: average of standard deviations of tBodyGyro on X axis in m/(s^2)          
+
+25 - tBodyGyro_sd_Y_average: average of standard deviations of tBodyGyro on Y axis in m/(s^2)          
+
+26 - tBodyGyro_sd_Z_average: average of standard deviations of tBodyGyro on Z axis in m/(s^2)          
+
+27 - tBodyGyroJerk_mean_X_average: average of means of tBodyGyroJerk on X axis in m/(s^3)              
+
+28 - tBodyGyroJerk_mean_Y_average: average of means of tBodyGyroJerk on Y axis in m/(s^3)              
+
+29 - tBodyGyroJerk_mean_Z_average: average of means of tBodyGyroJerk on Z axis in m/(s^3)              
+
+30 - tBodyGyroJerk_sd_X_average: average of standard deviations of tBodyGyroJerk on X axis in m/(s^3)  
+
+31 - tBodyGyroJerk_sd_Y_average: average of standard deviations of tBodyGyroJerk on Y axis in m/(s^3)  
+
+32 - tBodyGyroJerk_sd_Z_average: average of standard deviations of tBodyGyroJerk on Z axis in m/(s^3)  
+
+33 - tBodyAccMag_mean_average: average of means of tBodyAccMag in m/(s^2)                              
+
+34 - tBodyAccMag_sd_average: average of standard deviations of tBodyAccMag in m/(s^2)                  
+
+35 - tGravityAccMag_mean_average: average of means of tGravityAccMag in m/(s^2)                        
+
+36 - tGravityAccMag_sd_average: average of standard deviations of tGravityAccMag in m/(s^2)            
+
+37 - tBodyAccJerkMag_mean_average: average of means of tBodyAccJerkMag in m/(s^3)                      
+
+38 - tBodyAccJerkMag_sd_average: average of standard deviations of tBodyAccJerkMag in m/(s^3)          
+
+39 - tBodyGyroMag_mean_average: average of means of tBodyGyroMag in m/(s^2)                            
+
+40 - tBodyGyroMag_sd_average: average of standard deviations of tBodyGyroMag in m/(s^2)                
+
+41 - tBodyGyroJerkMag_mean_average: average of means of tBodyGyroJerkMag in m/(s^3)                    
+
+42 - tBodyGyroJerkMag_sd_average: average of standard deviations of tBodyGyroJerkMag in m/(s^3)        
+
+43 - fBodyAcc_mean_X_average: average of means of fBodyAcc on X axis in m/(s^2)                        
+
+44 - fBodyAcc_mean_Y_average: average of means of fBodyAcc on Y axis in m/(s^2)                        
+
+45 - fBodyAcc_mean_Z_average: average of means of fBodyAcc on Z axis in m/(s^2)                        
+
+46 - fBodyAcc_sd_X_average: average of standard deviations of fBodyAcc on X axis in m/(s^2)            
+
+47 - fBodyAcc_sd_Y_average: average of standard deviations of fBodyAcc on Y axis in m/(s^2)            
+
+48 - fBodyAcc_sd_Z_average: average of standard deviations of fBodyAcc on Z axis in m/(s^2)            
+
+49 - fBodyAccJerk_mean_X_average: average of means of fBodyAccJerk on X axis in m/(s^3)                
+
+50 - fBodyAccJerk_mean_Y_average: average of means of fBodyAccJerk on Y axis in m/(s^3)                
+
+51 - fBodyAccJerk_mean_Z_average: average of means of fBodyAccJerk on Z axis in m/(s^3)                
+
+52 - fBodyAccJerk_sd_X_average: average of standard deviations of fBodyAccJerk on X axis in m/(s^3)    
+
+53 - fBodyAccJerk_sd_Y_average: average of standard deviations of fBodyAccJerk on Y axis in m/(s^3)    
+
+54 - fBodyAccJerk_sd_Z_average: average of standard deviations of fBodyAccJerk on Z axis in m/(s^3)    
+
+55 - fBodyGyro_mean_X_average: average of means of fBodyGyro on X axis in m/(s^2)                      
+
+56 - fBodyGyro_mean_Y_average: average of means of fBodyGyro on Y axis in m/(s^2)                      
+
+57 - fBodyGyro_mean_Z_average: average of means of fBodyGyro on Z axis in m/(s^2)                      
+
+58 - fBodyGyro_sd_X_average: average of standard deviations of fBodyGyro on X axis in m/(s^2)          
+
+59 - fBodyGyro_sd_Y_average: average of standard deviations of fBodyGyro on Y axis in m/(s^2)          
+
+60 - fBodyGyro_sd_Z_average: average of standard deviations of fBodyGyro on Z axis in m/(s^2)          
+
+61 - fBodyAccMag_mean_average: average of means of fBodyAccMag in m/(s^2)                              
+
+62 - fBodyAccMag_sd_average: average of standard deviations of fBodyAccMag in m/(s^2)                  
+
+63 - fBodyBodyAccJerkMag_mean_average: average of means of fBodyBodyAccJerkMag in m/(s^3)              
+
+64 - fBodyBodyAccJerkMag_sd_average: average of standard deviations of fBodyBodyAccJerkMag in m/(s^3)  
+
+65 - fBodyBodyGyroMag_mean_average: average of means of fBodyBodyGyroMag in m/(s^2)                    
+
+66 - fBodyBodyGyroMag_sd_average: average of standard deviations of fBodyBodyGyroMag in m/(s^2)        
+
+67 - fBodyBodyGyroJerkMag_mean_average: average of means of fBodyBodyGyroJerkMag in m/(s^3)            
+
+68 - fBodyBodyGyroJerkMag_sd_average: average of standard deviations of fBodyBodyGyroJerkMag in m/(s^3)
