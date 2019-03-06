@@ -21,9 +21,9 @@ In this repository you'll find 4 files:
 
 If you want to replicate my analysis you can either:
 
-* execute `run_analysis.R` script after replacing `path <- "./data"` with your local path to unzipped "UCI HAR Dataset" directory
+* execute `run_analysis.R` script after replacing `path <- "./data"` with your local path to unzipped "UCI HAR Dataset" directory;
 
-* load directly my tidy data set in R using
+* load directly my tidy data set in R using:
 ```R
 path <- "your local path" # replace with your local path to downloaded file
 Luigi_tidy_data <- read.table(file.path(path, "my_tidy_data.txt"), header = TRUE)
@@ -32,10 +32,10 @@ Luigi_tidy_data <- read.table(file.path(path, "my_tidy_data.txt"), header = TRUE
 
 ## My choices to complete the assignment
 
-For completing the 5 steps I've often used packages in `tidyverse` library, so my data set are mainly tibbles. Details on my choices about required task can be found in `run_analysis.R` and `CodeBook.md`. 
+For completing the 5 steps I've often used packages in `tidyverse` library, so my data set are mainly tibbles. Further details on my choices about required task can be found in `run_analysis.R`. 
 
 ### Step 1: merging training and test data sets
-I've loaded 3 files for training data (subject_train.txt, y_train, X_train) and binded them by columns into a single training data set. Then I did the same for test data and finally I merged training and test data into one data set called `my_data` binding rows. Because is a task required in step 4, in this first step named just subject and activity variables leaving other variables with default names assigned by `read_delim()`: X1, X2 and so on.
+I've loaded 3 files for training data (subject_train.txt, y_train.txt, X_train.txt) and binded them by columns into a single training data set. Then I did the same for test data and finally I merged training and test data into one data set called `my_data` binding rows. Because is a task required in step 4, in this first step I've named just subject and activity variables, leaving other variables with default names assigned by `read_delim()`: X1, X2 and so on.
 
 ### Step 2: extracting mean and standard deviation for each measurement
 I decided to extract mean and standard deviation computed on these signals, as specified in features_info.txt file:
@@ -58,7 +58,7 @@ I decided to extract mean and standard deviation computed on these signals, as s
 * fBodyGyroMag
 * fBodyGyroJerkMag
 
-Variables I extracted are 66 identified by mean() and std() suffix in feature.txt file. There are other variables that involve a mean computation but they are used in the angle() variables and so I didn't extract them.
+I extracted 66 features with `mean()` and `std()` suffix in their names listed in feature.txt file. There are other variables that involve a mean computation but they are used in the angle() variables and so I didn't extract them.
 
 ### Step 3: naming the activities in the data set
 I named activities converting to factor `activity` variable of `my_data`. I defined levels and labels according to activity_labels.txt file.
@@ -78,14 +78,14 @@ My tidy data set has 68 variables (for details see `CodeBook.md`):
 
 * `subject` with id of subjects as values,
 * `activity` with activity as values,
-* 66 variables extracted in step 2 with their average for each subject and each activity as values.
+* 66 variables extracted in step 2, with averages for each subject and each activity as values.
 
-My tidy data set has 180 observations. Each observational unit is defined by the 180 possible combinations of 30 subjects and 6 activities, and contains values of the 68 variables described above.
+My tidy data set has 180 observations. Each observational unit is defined by the 180 possible combinations of 30 subjects and 6 activities. It contains values of the 68 variables described above and in `CodeBook.md`.
 
 
 ## A brief note on units of measurement
 
-In the orginal documentation units of measurement are not specified. To put them in `CodeBook.md`, considering that are signals form an accelerometer, I followed those guidelines:
+In the orginal documentation units of measurement are not specified. To put them in `CodeBook.md`, considering that values are signals from an accelerometer, I followed these guidelines:
 
 * raw signals are expressed in m/(s^2),
 * jerk signals are expressed in m/(s^3),

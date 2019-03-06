@@ -4,7 +4,7 @@ With `run_analysis.R` script I've created 2 data sets.
 
 ## my_data
 
-Is the raw data set built according to indications provided in step 1, 2, 3 an 4
+Is the raw data set built according to indications provided in step 1, 2, 3 and 4.
 
 ### Variables and values of categorical variables
 
@@ -155,7 +155,7 @@ values:
 
 ## my_tidy_data
 
-Is the tidy data set built according to indications provided in step 5 and illustrated in `README.md`
+Is the tidy data set built according to indications provided in step 5 and illustrated in `README.md`.
 
 ### Variables and values of categorical variables
 
