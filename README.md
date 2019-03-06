@@ -37,4 +37,31 @@ For completing the 5 steps I've often used packages in `tidyverse` library, so m
 ### Step 1: merging training and test datasets
 I've loaded 3 files for training data (subject_train.txt, y_train, X_train) and binded them by columns into a sigle traning dataset. Then I did the same for test data and finally I merged training and test data into one dataset called `my_data` binding rows. Because is a task required in step 4, in this first step named just subject and activity variables leaving other variables with default names assigned by `read_delim()`: X1, X2 and so on.
 
-### Step 2: 
+### Step 2: extracting mean and standard deviation for each measurement
+I decided to extract mean and standard deviation computed on these signals, as specified in features_info.txt file:
+* tBodyAcc-XYZ
+* tGravityAcc-XYZ
+* tBodyAccJerk-XYZ
+* tBodyGyro-XYZ
+* tBodyGyroJerk-XYZ
+* tBodyAccMag
+* tGravityAccMag
+* tBodyAccJerkMag
+* tBodyGyroMag
+* tBodyGyroJerkMag
+* fBodyAcc-XYZ
+* fBodyAccJerk-XYZ
+* fBodyGyro-XYZ
+* fBodyAccMag
+* fBodyAccJerkMag
+* fBodyGyroMag
+* fBodyGyroJerkMag
+These variables are identified by mean() and std() suffix. In total I extracted 66 variables. There are other variables that involve a mean computation but they are used in the angle() variables and so I didn't extract them
+
+### Step 3: naming the activities in the data set
+I named activities converting to factor `activity` variable of `my_data`. I definied levels and labels according to activity_labels.txt file
+
+### Step 4: labelling dataset with descriptive variable names
+
+
+
