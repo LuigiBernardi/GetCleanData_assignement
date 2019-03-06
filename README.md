@@ -10,7 +10,7 @@ In this repository you'll find 4 files:
 
 * `README.md` is this file in which I explain how to replicate my analysis, how to load my data into R and the choices I made to complete the assignment;
 
-* `CodeBook.md` is the a code book that describes all the object and variables I created or modified;
+* `CodeBook.md` is the a code book that describes data sets and variables I created or modified;
 
 * `run_analysis.R` is the R script that contains the code used for completing each of the 5 steps;
 
@@ -81,3 +81,13 @@ My tidy data set has 68 variables (for details see `CodeBook.md`):
 * 66 variables extracted in step 2 with their average for each subject and each activity as values.
 
 My tidy data set has 180 observations. Each observational unit is defined by the 180 possible combinations of 30 subjects and 6 activities, and contains values of the 68 variables described above.
+
+
+## A brief note on units of measurement
+
+In the orginal documentation units of measurement are not specified. To indicate them in `CodeBook.md`, considering that they are signals form an accelerometer i followed this guide lines:
+
+* raw signals are expressed in m/(s^2),
+* jerk signals are expressed in m/(s^3),
+* magnitude preserve the orginal unit of measurement,
+* all means and standard deviations computed on raw data preserve the orginal unit of masurement, and so does any average of mean and standard deviation values.
